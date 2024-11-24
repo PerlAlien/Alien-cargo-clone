@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.02      2024-11-24 09:12:52 -0700
   - Fix bug where `cargo` might not be in PATH if Alien::cargo
     is a `share` install. (gh#2)
 
