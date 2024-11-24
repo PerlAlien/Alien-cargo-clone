@@ -1,7 +1,4 @@
 #!/bin/bash
 
 set -ex
-
 cip exec mkdir -p /home/cip/tmp
-
-cip pkg rust
