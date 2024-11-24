@@ -1,5 +1,4 @@
 #!/bin/bash
 
 set -ex
-cip exec cpanm -n https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Alien-cargo-0.03.tar.gz
 cip exec mkdir -p /home/cip/tmp
