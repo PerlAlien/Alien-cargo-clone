@@ -1,5 +1,4 @@
 Alien-cargo-clone-*
 /.build/
 *.swp
-
-
+/.vscode
