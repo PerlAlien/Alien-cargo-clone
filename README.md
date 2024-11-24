@@ -31,7 +31,7 @@ Returns the list of directories (if any) that need to be added to the `PATH` to 
 
 - [Alien::Rust](https://metacpan.org/pod/Alien::Rust)
 - [Alien::cargo](https://metacpan.org/pod/Alien::cargo)
-- [FFI::Build::File::Cargo](https://metacpan.org/pod/FFI::Build::File::Cargo)>
+- [FFI::Build::File::Cargo](https://metacpan.org/pod/FFI::Build::File::Cargo)
 
 # AUTHOR
 

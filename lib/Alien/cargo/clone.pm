@@ -49,7 +49,7 @@ sub bin_dir {
 
 =item L<Alien::cargo>
 
-=item L<FFI::Build::File::Cargo>>
+=item L<FFI::Build::File::Cargo>
 
 =back
 
