@@ -3,7 +3,7 @@ package Alien::cargo::clone;
 use strict;
 use warnings;
 use parent qw( Alien::Base );
-use Alien::cargo;
+use Alien::cargo 0.03;
 use 5.008004;
 
 # ABSTRACT: Find or build the cargo clone command
