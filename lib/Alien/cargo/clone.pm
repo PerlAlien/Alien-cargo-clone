@@ -3,6 +3,7 @@ package Alien::cargo::clone;
 use strict;
 use warnings;
 use parent qw( Alien::Base );
+use Alien::cargo;
 use 5.008004;
 
 # ABSTRACT: Find or build the cargo clone command
@@ -13,7 +14,7 @@ use 5.008004;
  use Alien::cargo::clone;
  use Env qw( @PATH );
  
- push @PATH, Alien::cargo::clone->bin_dir;
+ unshift @PATH, Alien::cargo::clone->bin_dir;
  system 'cargo', 'clone', 'foo-bar';
 
 =head1 DESCRIPTION
@@ -31,6 +32,25 @@ C<cargo clone>.
 
 =cut
 
+sub bin_dir {
+    my $self = shift;
+    my @dirs = Alien::cargo->bin_dir;
+    unshift @dirs, $self->SUPER::bin_dir;
+    @dirs;
+}
+
 1;
 
+=head1 SEE ALSO
 
+=over 4
+
+=item L<Alien::Rust>
+
+=item L<Alien::cargo>
+
+=item L<FFI::Build::File::Cargo>>
+
+=back
+
+=cut

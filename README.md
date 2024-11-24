@@ -8,7 +8,7 @@ Find or build the cargo clone command
 use Alien::cargo::clone;
 use Env qw( @PATH );
 
-push @PATH, Alien::cargo::clone->bin_dir;
+unshift @PATH, Alien::cargo::clone->bin_dir;
 system 'cargo', 'clone', 'foo-bar';
 ```
 
@@ -26,6 +26,12 @@ my @dir = Alien::cargo::clone->bin_dir;
 
 Returns the list of directories (if any) that need to be added to the `PATH` to use
 `cargo clone`.
+
+# SEE ALSO
+
+- [Alien::Rust](https://metacpan.org/pod/Alien::Rust)
+- [Alien::cargo](https://metacpan.org/pod/Alien::cargo)
+- [FFI::Build::File::Cargo](https://metacpan.org/pod/FFI::Build::File::Cargo)>
 
 # AUTHOR
 
